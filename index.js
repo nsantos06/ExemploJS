@@ -101,3 +101,11 @@ console.log(podeVotar);
 
 let podeViajar = !podeVotar; 
 console.log(podeViajar);
+
+//Operadores 
+// clientColor, stockColor , soldColor
+let corCliente = undefined;
+let corEstoque = 'Black';
+let corVendida = corCliente || corEstoque ;
+
+console.log(corVendida);
