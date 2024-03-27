@@ -109,3 +109,83 @@ let corEstoque = 'Black';
 let corVendida = corCliente || corEstoque ;
 
 console.log(corVendida);
+
+//Precedencia de operadores
+
+let num7 = 3 + 4 * 2;
+console.log(num7);
+
+// If and Else
+
+let driverSpeed = 101; 
+
+if (driverSpeed > 100){
+    console.log('Above Speed Limit');
+}
+else if (driverSpeed >= 60 && driverSpeed <= 100){
+    console.log('Normally Speed Limit');
+}
+else {
+    console.log('Below Speed Limit');
+}
+
+let airportName="GRU";
+
+switch (airportName){
+    case 'MCO':
+        console.log('Orlando International Airport');
+        break;
+    case 'GRU':
+        console.log('Sao Paulo International Airport');
+        break;
+    case 'LAX':
+        console.log('Los Angeles International Airport');
+        break;
+    case 'LAS':
+        console.log('Las Vegas International Airport');
+        break;
+    default:
+        console.log('Airport not found');
+        break;
+}
+
+//For Loop
+for(i=1; i<=10; i++){
+    console.log('Numero', i);
+}
+// While Loop
+// let index = 1;
+// while(index<=10){
+//     console.log('Item:', index);
+//     index++;
+// }
+
+//Do while
+// let index = 1;
+// do{
+//     console.log("Numero:", index);
+//     index++;
+// }while (index <=10){
+
+// }
+
+//For in loop
+
+const myCar = {
+    model: 'Fiesta',
+    year: 2019,
+    color: 'Red',
+    km: 68000
+}
+
+// for(let key in myCar){
+//     console.log(key, myCar[key]);
+// }
+
+//For of loop
+
+const friends = ['Joao', 'Maria', 'Pedro', 'Jose'];
+
+for(let friend of friends){
+    console.log(friend);    
+}
