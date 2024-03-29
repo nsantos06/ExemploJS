@@ -293,3 +293,11 @@ for (motos in motoLista){
                     motoLista[motos].ano, motoLista[motos].preco
     )
 }
+
+//built-in objects
+
+console.log(Math.max(2, 5, 10, 15, 20, 25));
+console.log(Math.min(2, 5, 10, 15, 20, 25));
+console.log(Math.random());
+console.log(Math.round(3,4))
+console.log(Math.PI)
