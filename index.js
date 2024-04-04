@@ -264,40 +264,174 @@
 // // book1.price = 40;
 // // console.log(book1);
 
-function VendaVeiculos(veiculo, modelo, marca, ano, preco){
-    this.veiculo = veiculo;
-    this.modelo = modelo;
-    this.marca = marca;
-    this.ano = ano;
-    this.preco = preco;
-} 
+// function VendaVeiculos(veiculo, modelo, marca, ano, preco){
+//     this.veiculo = veiculo;
+//     this.modelo = modelo;
+//     this.marca = marca;
+//     this.ano = ano;
+//     this.preco = preco;
+// } 
 
-const carro1 = new VendaVeiculos('Carro', 'Fiesta', 'Ford', 2019, 30000);
-const carro2 = new VendaVeiculos('Carro', 'Focus', 'Ford', 2018, 25000);
-const carro3 = new VendaVeiculos('Carro', 'Gol', 'Volkswagen', 2017, 20000);
-const carro4 = new VendaVeiculos('Carro', 'Celta', 'Chevrolet', 2016, 15000);
-const carro5 = new VendaVeiculos('Carro', 'Corsa', 'Chevrolet', 2015, 10000);
-const moto1 = new VendaVeiculos('Moto', 'Honda', 'CBR 600', 2019, 20000);
-const moto2 = new VendaVeiculos('Moto', 'Honda', 'CBR 500', 2018, 15000);
-const moto3 = new VendaVeiculos('Moto', 'Honda', 'CBR 400', 2017, 10000);
+// const carro1 = new VendaVeiculos('Carro', 'Fiesta', 'Ford', 2019, 30000);
+// const carro2 = new VendaVeiculos('Carro', 'Focus', 'Ford', 2018, 25000);
+// const carro3 = new VendaVeiculos('Carro', 'Gol', 'Volkswagen', 2018, 20000);
+// const carro4 = new VendaVeiculos('Carro', 'Celta', 'Chevrolet', 2018, 15000);
+// const carro5 = new VendaVeiculos('Carro', 'Corsa', 'Chevrolet', 2015, 10000);
+// const moto1 = new VendaVeiculos('Moto', 'Honda', 'CBR 600', 2019, 20000);
+// const moto2 = new VendaVeiculos('Moto', 'Honda', 'CBR 500', 2018, 15000);
+// const moto3 = new VendaVeiculos('Moto', 'Honda', 'CBR 400', 2017, 10000);
 
-let carroLista = [carro1, carro2, carro3, carro4, carro5];
-let motoLista = [moto1, moto2, moto3];
+// let carroLista = [carro1, carro2, carro3, carro4, carro5];
+// let motoLista = [moto1, moto2, moto3];
 
-for(carros in carroLista){
-    console.log(carroLista[carros].veiculo,carroLista[carros].modelo, carroLista[carros].marca, 
-                carroLista[carros].ano, carroLista[carros].preco);
+// // for(carros in carroLista){
+// //     console.log(carroLista[carros].veiculo,carroLista[carros].modelo, carroLista[carros].marca, 
+// //                 carroLista[carros].ano, carroLista[carros].preco);
+// // }
+// // for (motos in motoLista){
+// //     console.log(motoLista[motos].veiculo,motoLista[motos].modelo, motoLista[motos].marca,
+// //                     motoLista[motos].ano, motoLista[motos].preco
+// //     )
+// // }
+// for (i of carroLista){
+//     console.log(i.veiculo, i.modelo, i.marca, i.ano, i.preco);
+// }
+// for (i of motoLista){
+//     console.log(i.veiculo, i.modelo, i.marca, i.ano, i.preco);
+// }
+
+// // //built-in objects
+
+// // console.log(Math.max(2, 5, 10, 15, 20, 25));
+// // console.log(Math.min(2, 5, 10, 15, 20, 25));
+// // console.log(Math.random());
+// // console.log(Math.round(3,4))
+// // console.log(Math.PI)
+// // console.log(Date());
+// // //String 
+
+// // let message = 'Hey, whats going on';
+// // console.log(message.length);
+// // console.log(message.includes('whats'));
+
+// // //Templates Literals
+
+// // let name = 'Joe';
+// // const email = 'Hi ' + name  + ',\n The meet is scheduled for tomorrow at 10:00am.\nThanks,\nJefferson'; 
+// // console.log(email);
+// // const email2 = `Hi ${name}` + ',\n The meet is scheduled for tomorrow at 10:00am.\nThanks,\nNicollas';
+// // console.log(email2);
+
+// //Arrays
+
+// // const random = ['Marcos', 1, true];
+// // console.log(random);
+
+// //Add item array
+// const num = [1, 2, 3, 4, 5];
+// //Adiciona o item na array
+// function adicionarArray(){
+//     for(i = 6; i<= 10; i++){
+//         num.push(i);
+//     }
+// }
+// adicionarArray();
+// console.log(num);
+
+// // console.log(num);
+// // //num.unshift(44,66,88);
+// // console.log(num);
+
+// // num.splice(3,0,4,5,6)
+
+// console.log(num.indexOf(0));
+
+// //Arrays de refencia
+
+// const movies = [
+//     {id:1, title:'Matrix', rating:4.5},
+//     {id:2, title:'Anatomy of the Fall', rating:5},
+//     {id:3, title:'American Fiction', rating:4},
+//     {id:4, title:'Back to the Future', rating:4.7}   
+// ]
+
+// console.log(movies.find(movie => movie.title === 'Matrix'));
+// console.log(movies.find(movie => movie.title === 'American Fiction'));
+
+// //Arrow Functions filtro 
+
+// // console.log(movies.find(movie => movie.title === 'Matrix'));
+// // console.log(movies.find(movie => movie.id === 4))
+
+// // console.log(carroLista.find(carro => carro.modelo === 'Fiesta'));
+
+// //Concatenando arrays
+
+// let letters = ['a', 'b', 'c']
+// all = num.concat(letters);
+// console.log(all);
+
+// half = all.slice(3,5);
+// console.log(half);
+
+// // Joining Arrays
+// let clients = ['Joe', 'Maria', 'Pedro', 'Jose'];
+// let clientsJoin = clients.join(' - ');
+// console.log(clientsJoin);
+
+// //organizar de forma alfabetica
+
+// clients.sort();
+// console.log(clients);
+// clients.reverse();
+// console.log(clients);
+
+//Verificando elementos dentro de um array
+
+const tempLondon = [18, -2, -13, 1, 3, 0, 11];
+
+// const tempPositive = tempLondon.filter(function(value){
+//     return value>=0
+// })
+// console.log(tempPositive);
+
+const tempPositive = tempLondon.filter(value => value>0);
+const tempNegative = tempLondon.filter(value => value<0);
+console.log(tempPositive);
+console.log(tempNegative);
+
+//hoisting
+//function declaration
+
+movie();
+function movie(){
+    console.log('Matrix');
 }
-for (motos in motoLista){
-    console.log(motoLista[motos].veiculo,motoLista[motos].modelo, motoLista[motos].marca,
-                    motoLista[motos].ano, motoLista[motos].preco
-    )
+
+//function expression
+
+const car = function(){
+    console.log('Fiesta');
+}
+car();
+
+const truck = car;
+truck();
+
+//Arguments object
+//lista os valores que voce passou dentro da funcao
+
+function priceValue(){
+    let totalValue = 0;
+    for(let value of arguments)
+        totalValue += value;
+    
+    return totalValue;
+}
+console.log(priceValue(2, 3, 4, 5, 6));
+
+function carLoan(loan, rate=21.5, years=5){
+    return (loan * (rate/100) * years) + loan;
 }
 
-//built-in objects
-
-console.log(Math.max(2, 5, 10, 15, 20, 25));
-console.log(Math.min(2, 5, 10, 15, 20, 25));
-console.log(Math.random());
-console.log(Math.round(3,4))
-console.log(Math.PI)
+console.log(carLoan(80000))
